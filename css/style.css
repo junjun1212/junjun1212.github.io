@@ -1,0 +1,156 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    height: 40px;
+    padding: 8px 4%;
+    margin: 0 auto;
+}
+
+header h1 {
+    width: 95px;
+    text-align: center;
+    padding: 4px;
+    font-size: 18px;
+    background-color: #3a4151;
+    color: #fff;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 6px;
+    font-size: 12px;
+}
+
+.main_visual {
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/main_visual.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.self_introduction {
+    padding: 0 4%;
+    margin: 70px auto;
+}
+
+.self_introduction h2 {
+    width: 130px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto 50px auto;
+}
+
+.self_introduction .my_explain {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.my_explain .my_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.my_explain .my_text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 30px;
+}
+
+.my_explain img {
+    border-radius: 50%;
+    max-width: 15.65%;
+}
+
+.profile_images {
+    padding: 0 4%;
+    margin: 90px auto;
+}
+
+.profile_images h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto 70px auto;
+}
+
+.image_contants {
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.image_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.image_text {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.profile_image img {
+    width: 100%;
+}
+
+.copyright {
+    font-size: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .self_introduction .my_explain {
+        display: grid;
+        grid-row: auto auto;
+        margin: 50px auto;
+    }
+
+    .my_explain .my_name {
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .my_explain .my_text {
+        font-size: 16px;
+        line-height: 15px;
+        margin-right: 0;
+    }
+
+    .my_explain img {
+        grid-row: 2;
+        margin: 0 auto;
+        max-width: none;
+        width: 100px;
+    }
+
+    .image_contants {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .profile_images h2 {
+        margin: 0 auto 50px auto;
+    }
+}
